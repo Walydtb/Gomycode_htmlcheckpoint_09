@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de renseignement</title>
+  </head>
+  <body>
+    <!-- Conteneur principal div -->
+    <div>
+      <h2>Formulaire de renseignement</h2>
+
+      <form action="#" method="POST">
+        <!-- Le tableau sert de structure directe pour le formulaire -->
+        <table border="1" cellpadding="10" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Password</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Fav Programming</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- Case Full Name -->
+              <td>
+                <input type="text" name="fullname" required />
+              </td>
+
+              <!-- Case Email -->
+              <td>
+                <input type="email" name="email" required />
+              </td>
+
+              <!-- Case Password -->
+              <td>
+                <input type="password" name="password" required />
+              </td>
+
+              <!-- Case Age -->
+              <td>
+                <input type="number" name="age" style="width: 50px" />
+              </td>
+
+              <!-- Case Gender -->
+              <td>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label><br />
+
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label><br />
+              </td>
+
+              <!-- Case Fav Programming -->
+              <td>
+                <select name="fav-programming">
+                  <option value="javascript">JavaScript</option>
+                  <option value="python">Python</option>
+                  <option value="html">HTML</option>
+                  <option value="css">CSS</option>
+                </select>
+              </td>
+
+              <!-- Case Country -->
+              <td>
+                <input type="text" name="country" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <button type="submit">Envoyer</button>
+        </p>
+      </form>
+
+      <!-- Footer à l'intérieur de la div -->
+      <footer>
+        <h2>2026 projet made by Walyd</h2>
+      </footer>
+    </div>
+  </body>
+</html>
